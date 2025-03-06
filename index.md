@@ -10,6 +10,19 @@ title: Home
 
 **smtp2sns** is a tool that allows you to send SMS messages using an email service. This uses AWS SNS sms service to send SMS.
 
+Example of the email send:
+```
+From: xxx@xxx.xxx
+to: 1xxxxxx@sms.sms
+Subject: sms
+DATA
+
+SMS to be send.
+.
+```
+And this will send an email to +1xxxxx phone.
+
+
 ## Configuration Guides
 
 - [AWS Configuration](/aws-config/)
