@@ -4,5 +4,5 @@
 
 ## How It Works
 1. Send an email to a specific address.
-2. The email is converted into an SMS.
+2. The email is converted into an SMS using AWS SNS sms service.
 3. The SMS is delivered to the recipient's phone.
