@@ -14,6 +14,8 @@ permalink: /helm-chart/
 helm repo add smtp2sns https://smtp2sns.github.io/smtp2sns
 ```
 
+[Link to ArtifactHub Helm Repo](https://artifacthub.io/packages/helm/smtp2sns/smtp2sns)
+
 1. create a secret in kubernetes to store AWS credentials:
 
 ```bash
