@@ -5,6 +5,9 @@ title: Home
 
 # Welcome to smtp2sns
 
+![Site Logo]({{ '/assets/images/logo.webp' | relative_url }})
+
+
 **smtp2sns** is a tool that allows you to send SMS messages using an email service. This uses AWS SNS sms service to send SMS.
 
 ## Configuration Guides
