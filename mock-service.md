@@ -6,10 +6,12 @@ permalink: /mock-service/
 
 # Mock Service
 
-## 
+The mock service disables the operation sns.publish to be able to test without AWS credentials and SNS.
 
-1. There is a test script to localhost:1025 to test the smtp server. 
-2. Netcat and bash is needed (nc)
+## How to configure
+
+1. On [Docker Usage](/docker/) add an env variable called MOCK_SERVICE="True"
+2. Netcat and bash is needed (n
 
 ```bash
 ./test.sh

@@ -22,7 +22,7 @@ kubectl create secret generic aws-credentials \
 
 ```
 
-1. create a values.yaml file with the `topic` and the `region`:
+2. create a values.yaml file with the `topic` and the `region`:
 ```yaml
 app:
   region: us-west-1
@@ -34,18 +34,18 @@ app:
     name: aws-credentials
 ```
 
-1. execute the helm chart
+3. execute the helm chart
 ```bash
 helm install smtp2sns smtp2sns/smtp2sns -f values.yaml
 ```
-1. [optional] execute helm chart from this repo:
+4. [optional] execute helm chart from this repo:
 ```bash
 
 helm install smtp2sns ./charts/smtp2sns -f values.yaml
 ```
 
 
-1. then you can send emails using this configuration (`host:port`) without credentials:
+5. then you can send emails using this configuration (`host:port`) without credentials:
 ```
 smtp2sns:1025
 ```

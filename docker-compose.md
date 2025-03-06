@@ -12,19 +12,19 @@ permalink: /docker-compose/
 
 ```bash
 vi .env
-TOPIC_ARN=arn:
+TOPIC_ARN=arn:aws:sns:us-west-1:account-id:topic-name
 AWS_REGION=us-west-1
 AWS_ACCESS_KEY_ID=xxxx
 AWS_SECRET_ACCESS_KEY=yyyy
 ```
-1. Then use docker command
+2. Then use docker command
 
 ```bash
 docker compose up -d
 ```
 
 
-then you can send emails using `localhost:1025` without credentials
+then you can send emails using `localhost:1025` without credentials. [Howto: test the service](/test/)
 
 ## Add Mock feature
 
@@ -34,10 +34,10 @@ then you can send emails using `localhost:1025` without credentials
 MOCK_SERVICE=True
 ```
 
-1. Then use docker command
+2. Then use docker command
 
 ```bash
 docker compose up -d
 ```
 
-The service will be mocked, don't use in production.
+The service will be mocked, don't use in production.[Mock Service Feature](/mock-service/)

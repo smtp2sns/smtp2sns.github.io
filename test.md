@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Howto test the service
+title: [Howto] test the service
 permalink: /test/
 ---
 
