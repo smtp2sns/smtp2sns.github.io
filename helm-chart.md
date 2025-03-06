@@ -19,11 +19,12 @@ helm repo add smtp2sns https://smtp2sns.github.io/smtp2sns
 ```bash
 kubectl create secret generic aws-credentials \
     --from-literal=AWS_ACCESS_KEY_ID='xxxx' \
-    --from-literal=AWS_SECRET_ACCESS_KEY='yyyy' \
+    --from-literal=AWS_SECRET_ACCESS_KEY='yyyy'
 
 ```
 
 2. create a values.yaml file with the `topic` and the `region`:
+
 ```yaml
 app:
   region: us-west-1
