@@ -31,7 +31,7 @@ app:
   topic: arn:aws:sns:us-west-1:xxxxx:MyTopic
   # mock service (do not use in production)
   #mock: "true"  
-  secret: 
+  secret:
     name: aws-credentials
 ```
 
