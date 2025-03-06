@@ -16,7 +16,7 @@ helm repo add smtp2sns https://smtp2sns.github.io/smtp2sns
 
 [Link to ArtifactHub Helm Repo](https://artifacthub.io/packages/helm/smtp2sns/smtp2sns)
 
-1. create a secret in kubernetes to store AWS credentials:
+2. create a secret in kubernetes to store AWS credentials:
 
 ```bash
 kubectl create secret generic aws-credentials \
@@ -25,7 +25,7 @@ kubectl create secret generic aws-credentials \
 
 ```
 
-2. create a values.yaml file with the `topic` and the `region`:
+3. create a values.yaml file with the `topic` and the `region`:
 
 ```yaml
 app:
@@ -38,13 +38,13 @@ app:
     name: aws-credentials
 ```
 
-3. execute the helm chart
+4. execute the helm chart
 
 ```bash
 helm install smtp2sns smtp2sns/smtp2sns -f values.yaml
 ```
 
-4. [optional] execute helm chart from this repo:
+4b. [optional] execute helm chart from this repo:
 
 ```bash
 helm install smtp2sns ./charts/smtp2sns -f values.yaml
