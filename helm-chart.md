@@ -13,6 +13,7 @@ permalink: /helm-chart/
 ```bash
 helm repo add smtp2sns https://smtp2sns.github.io/smtp2sns
 ```
+
 1. create a secret in kubernetes to store AWS credentials:
 
 ```bash
@@ -35,17 +36,19 @@ app:
 ```
 
 3. execute the helm chart
+
 ```bash
 helm install smtp2sns smtp2sns/smtp2sns -f values.yaml
 ```
-4. [optional] execute helm chart from this repo:
-```bash
 
+4. [optional] execute helm chart from this repo:
+
+```bash
 helm install smtp2sns ./charts/smtp2sns -f values.yaml
 ```
 
-
 5. then you can send emails using this configuration (`host:port`) without credentials:
+
 ```
 smtp2sns:1025
 ```
