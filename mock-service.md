@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Howto test the service
-permalink: /test/
+title: [Feature] Mock Service
+permalink: /mock-service/
 ---
 
-# Testing
+# Mock Service
 
-## How to use test script to simulate a client
+## 
 
 1. There is a test script to localhost:1025 to test the smtp server. 
 2. Netcat and bash is needed (nc)
